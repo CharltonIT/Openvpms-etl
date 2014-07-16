@@ -3,7 +3,7 @@ The scripts were developed based on the format of the 'VeNom v20 04DEC2012 one s
 
 Note that the original spreadsheets cannot be committed to svn due to licensing restrictions.
 
-This was exported to CSV using OpenOffice with the following settings:
+This was exported to CSV using OpenOffice File -> Save-As with the following settings:
 . Characer set: Unicode (UTF-8)
 . Field delimeter: ,
 . Text delimeter: "
@@ -16,6 +16,8 @@ The scripts are:
                                 complaint codes.
                                 This excludes 'Active Non-referral' presenting complaints which essentially duplicate
                                 the 'Active referral' ones.
+. lookups.pl                  - produces dataload compatible output to load lookup.diagnosisVeNom and
+                                lookup.presentingComplaintVeNom lookups.
 
 Note that the perl scripts require the Text::CSV module. If this is not installed, run the following:
 
