@@ -235,7 +235,7 @@ public class LoaderTestCase extends AbstractJUnit4SpringContextTests {
 
         Mapping mapping = createMapping(
                 "FAXNUMBER",
-                "<party.customerperson>contacts[0]<contact.faxNumber>faxNumber");
+                "<party.customerperson>contacts[0]<contact.phoneNumber>telephoneNumber");
         mapping.setExcludeNull(true);
         mappings.addMapping(mapping);
 
