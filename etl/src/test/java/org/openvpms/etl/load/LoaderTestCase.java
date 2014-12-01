@@ -234,14 +234,14 @@ public class LoaderTestCase extends AbstractJUnit4SpringContextTests {
         mappings.setIdColumn("CUSTID");
 
         Mapping mapping = createMapping(
-                "FAXNUMBER",
+                "PHONENUMBER",
                 "<party.customerperson>contacts[0]<contact.phoneNumber>telephoneNumber");
         mapping.setExcludeNull(true);
         mappings.addMapping(mapping);
 
         Loader loader = createLoader("CUSTLOAD", mappings);
         ETLRow row = new ETLRow("CUSTID");
-        row.add("FAXNUMBER", null);
+        row.add("PHONENUMBER", null);
         List<IMObject> objects = loader.load(row);
         loader.close();
 
